@@ -1,0 +1,96 @@
+
+.portfolio {
+  padding: 94px 0px;
+}
+.potfolio__title {
+  @include font(bold, 18px, 2, 0.06em);
+  color: var(--primery-menu-link-color);
+}
+.portfolio__text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primery-gray-color);
+}
+.portfolio__button {
+  font-family: inherit;
+  @include font(500, 16px, 1.62, 0.03em);
+  cursor: pointer;
+  color: var(--primery-menu-link-color);
+  background-color: var(--team-background-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
+  outline: none;
+  transition: color var(--time) var(--cubic-bezier),
+  background-color var(--time) var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--primery-white-color);
+    background-color: var(--primery-accent-color);
+  }
+}
+.portfolio-menu__item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.content-box {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.content-list__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  background: var(--primery-white-color);
+}
+.content-list__link {
+  display: block;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.content-img {
+  display: block;
+  width: 370px;
+  height: 294px;
+}
+.content-list__img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__overlay {
+  font-family: var(--primery-font);
+  @include font(normal, 18px, 1.55, 0.03em);
+  padding: 63px 24px;
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--primery-white-color);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: auto;
+  transform: translateY(100%);
+  .content-list__link:hover &,
+  .content-list__link:focus & {
+    transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

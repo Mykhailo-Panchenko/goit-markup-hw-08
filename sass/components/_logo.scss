@@ -1,0 +1,18 @@
+.logo {
+    font-family: var(--secondary-font);
+    @include font(bold, 26px, 1.19, 0.03em);
+    color: var(--primery-accent-color);    
+}
+.logo-header{
+    margin-right: 92px;
+}
+.logo-footer{
+    display: block;
+    margin-bottom: 20px;
+}
+.logo_dark{
+    color: var(--primery-logo-color);
+}
+.logo_light{
+    color: var(--primery-white-color);
+}

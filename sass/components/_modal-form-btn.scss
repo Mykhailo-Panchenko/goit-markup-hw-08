@@ -1,0 +1,16 @@
+.modal-form-btn{
+    font-family: var(--primery-font);
+    font-style: normal;
+    @include font(bold, 16px, 1.87, 0.06em);
+    color: var(--primery-white-color);
+    background-color: var(--primery-accent-color);
+    box-sizing: border-box;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    margin-top: 30px;
+    align-self: center;
+}
