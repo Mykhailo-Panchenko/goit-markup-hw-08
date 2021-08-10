@@ -1,11 +1,19 @@
+.footer-section {
+  background-color: var(--primery-background-color);
+  padding: 60px 0px;
+}
+.address-list{
+  text-align: center;
+  margin-bottom: 60px;
+}
 .address-list__map-link {
   color: var(--primery-white-color);
 }
+.address-list__item:not(:last-child){
+  margin-bottom: 8px;
+}
 .address-list__link {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font (normal, 14px, 1.71, 0.03em);
   color: var(--primery-address-text-color);
   transition: color var(--time) var(--cubic-bezier);
   &:hover,
@@ -13,30 +21,58 @@
     color: var(--primery-white-color);
   }
 }
-.footer-section {
-  background-color: var(--primery-background-color);
-  padding: 60px 0px;
-}
-.address-list__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
 .link-text {
+  text-align: center;
   font-family: var(--primery-font);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font (bold, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--primery-white-color);
   margin-bottom: 20px;
 }
-.footer__link-box {
-  margin-left: 70px;
-}
 .social-list__item:not(:last-child) {
   margin-right: 10px;
+}
+@media screen and (min-width: 768px){
+  .foot{
+    display: flex;
+    justify-content: space-between;
+  }
+  .link-text{
+    margin-top: 5px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .address-list__map-link {
+    color: var(--primery-white-color);
+  }
+  .address-list__link {
+    @include font (normal, 14px, 1.71, 0.03em);
+    color: var(--primery-address-text-color);
+    transition: color var(--time) var(--cubic-bezier);
+    &:hover,
+    &:focus {
+      color: var(--primery-white-color);
+    }
+  }
+ 
+  .address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .link-text {
+    text-align: left;
+  }
+  .footer__link-box {
+    margin-left: 70px;
+  }
+  .social-list__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }

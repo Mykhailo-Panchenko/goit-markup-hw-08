@@ -69,7 +69,7 @@
     
     font-family: var(--primery-font);
     font-style: normal;
-    @include font(normal, 14px, 1.71, 0.03em);
+    @include font(normal, 12px, 1.16, 0.03em);
     color:var(--primery-gray-color);
     display: flex;
     align-items: center;
@@ -96,6 +96,32 @@
     }
   }
 .modal-form-label-link{
-    color: var(--primery-accent-color);
-    text-decoration: underline;
+  color: var(--primery-accent-color);
+  text-decoration: underline;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.modal-form-head {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+@media screen and (min-width: 1200px){
+  .modal-form-head {
+    font-size: 14px;
+  line-height: 1.71; 
+  }
+  
+  .modal-form-label-link{
+    line-height: 1.15;
+  }
 }

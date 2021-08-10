@@ -1,6 +1,6 @@
 .modal {
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 610px;
     background-color: var(--primery-white-color);
     position: absolute;
     left: 50%;
@@ -30,4 +30,12 @@
       fill: var(--primery-accent-color);
     }
   }
+
+@media screen and (min-width: 1200px){
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
  
+}
+  

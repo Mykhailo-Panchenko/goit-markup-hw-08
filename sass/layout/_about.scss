@@ -1,9 +1,15 @@
-.about-list {
+.about-section{
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-section {
+    display: block;
+    padding: 47px 0px 94px 0px;
+  }
+  .about-list {
     display: flex;
     justify-content: space-between;
-}
-.about-section {
-  padding: 47px 0px 94px 0px;
 }
 .about-list__item {
   position: relative;
@@ -15,7 +21,6 @@
   width: 370px;
   height: 294px;
 }
-
 .about-list__overlay {
   font-family: var(--primery-font);
   font-style: normal;
@@ -30,4 +35,5 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  }
 }
