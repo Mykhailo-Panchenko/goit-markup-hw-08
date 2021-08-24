@@ -28,15 +28,9 @@
 
 
 @media screen and (min-width: 1200px){
-  .social-list__link {
-    transition: background-color var(--time) var(--cubic-bezier),
-    fill var(--time) var(--cubic-bezier);
-    &:hover,
-    &:focus {
-      fill: var(--primery-white-color);
-      background-color: var(--primery-accent-color);
-    }   
-  }
+
+
+ 
 }
 
  

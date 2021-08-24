@@ -40,8 +40,9 @@
   }
   .clients-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
+
   .clients-list__link {
     display: flex;
     justify-content: center;
@@ -61,7 +62,5 @@
       cursor: pointer;
     }
   }
-  .clients-list__item:not(:last-child) {
-    margin-right: 30px;
-  }
+ 
 }

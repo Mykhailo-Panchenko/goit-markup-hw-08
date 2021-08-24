@@ -15,6 +15,10 @@
     @include font (500, 40px, 1.17, 0.02em);
     text-align: center;
     color: var(--primery-menu-link-color);
+    &:hover,
+    &:focus {
+      color: var(--primery-accent-color);
+    }
 }
 .mobile-menu__contacts-list {
     margin-top: 302px;

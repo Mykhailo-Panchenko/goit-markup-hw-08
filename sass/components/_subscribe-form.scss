@@ -1,5 +1,5 @@
 .footer-form-head{
-  text-align: center;
+  text-align:center;
   font-family: var(--primery-white-color);
   font-style: normal;
   @include font(bold, 14px, 1.14, 0.03em);
@@ -48,35 +48,27 @@
     margin-left:149px ;
   }
   .footer-form-head {
-    margin-top: 0;
+    margin-top: 60;
   }
 }
 
 
 
 @media screen and (min-width: 1200px){
-  .footer-subscribe-form {
-    margin-left: 90px;
+  .footer-subscribe-form{
+    margin-left: 92px;
+  }
+  .footer-form-input{
+    width: 358px;
+    margin-left: 0px;
+    margin-right: 12px;
   }
   .footer-form-head{
-    // text-align: left; 
-    margin-bottom: 14px;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 20px;
   }
   .form-wrapper{
     display: flex;
   }
-  .footer-form-input{
-    width: 358px;
-
-  }
-  .footer-btn{
-    margin-left: 12px;
-  }
-  .footer-btn-img{
-    margin-left: 10px;
-    fill: var(--primery-white-color);
-  }
-  
-    
-  
 }
